@@ -20,3 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
+//   -----------------------------------------
+
+document.getElementById("downloadCheckbox").addEventListener("change", function () {
+    if (this.checked) {
+      // Letöltés elindítása
+      const link = document.createElement("a");
+      link.href = "images/discordimg.png"; // Itt adhatod meg a fájl URL-jét
+      link.download = "discordimg.png"; // A fájl neve letöltéskor
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  });
+  
