@@ -1,18 +1,18 @@
-/* Alapértelmezett (nappali mód) */
+
 body {
     background-color: white;
     color: black;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  /* Éjszakai mód */
+  
   body.dark-mode {
     background-color: black;
     color: white;
   }
 
 
-/* download button */
+/* download gomb */
 .container {
     padding: 0;
     margin: 0;
@@ -235,17 +235,10 @@ body {
 
 
 
-  /* NIGHT MODE R2D2 */
-  /* From Uiverse.io by Galahhad */ 
-/* REMASTERED */
-/* RTX-ON */
-/* completely redone toggle and droid */
+  
 
 .bb8-toggle {
     --toggle-size: 13px;
-    /* finally I removed the scale now everything depends on the font-size */
-    /* --margin-top-for-head: 1.75em; */
-    /* it's just in case 👆 */
     --toggle-width: 10.625em;
     --toggle-height: 5.625em;
     --toggle-offset: calc((var(--toggle-height) - var(--bb8-diameter)) / 2);

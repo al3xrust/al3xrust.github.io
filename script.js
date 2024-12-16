@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     bb8Toggle.addEventListener('change', () => {
       if (bb8Toggle.checked) {
         body.classList.add('dark-mode');
-        localStorage.setItem('darkMode', 'enabled'); // Tárolás
+        localStorage.setItem('darkMode', 'enabled'); 
       } else {
         body.classList.remove('dark-mode');
-        localStorage.setItem('darkMode', 'disabled'); // Tárolás
+        localStorage.setItem('darkMode', 'disabled'); 
       }
     });
   });
@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.getElementById("downloadCheckbox").addEventListener("change", function () {
     if (this.checked) {
-      // Letöltés elindítása
+      
       const link = document.createElement("a");
-      link.href = "images/discordimg.png"; // Itt adhatod meg a fájl URL-jét
-      link.download = "discordimg.png"; // A fájl neve letöltéskor
+      link.href = "images/discordimg.png"; 
+      link.download = "discordimg.png"; 
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
